@@ -1,0 +1,72 @@
+body {
+  font-family: arial;
+  margin: 0;
+  padding: 0;
+}
+
+.calculation {
+  color: black;
+  font-weight: 500;
+  font-size: 40px;
+}
+
+.calculation-container {
+  display: flex;
+  align-items: center;
+  margin: 0px 10px 20px;
+  height: 40px;
+  background-color: lightgrey;
+  padding: 10px;
+  width: 250px;
+}
+
+.digit-button,
+.clear-button,
+.operator,
+.delete-button {
+  border-radius: 999px;
+  border: none;
+  color: white;
+  background-color: rgb(63, 63, 63);
+  height: 60px;
+  width: 60px;
+  font-size: 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.digit-button:hover,
+.clear-button:hover,
+.operator:hover,
+.delete-button:hover {
+  opacity: 0.9;
+}
+
+
+.digit-button:active,
+.clear-button:active,
+.operator:active,
+.delete-button:active {
+  opacity: 0.7;
+}
+
+.column-divider {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+
+.row-divider {
+  display: flex;
+  flex-direction: row;
+}
+
+.clear-button,
+.delete-button {
+  font-size: 16px;
+}
+
+.operator {
+  background-color: orange;
+}
