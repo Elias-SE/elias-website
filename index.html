@@ -3,8 +3,22 @@
   <head>
     <title>Calculator</title>
     <link rel="stylesheet" href="10i.css">
+    <link rel="stylesheet" href="stopwatch.css">
   </head>
   <body onkeydown="handleKeydown(event);">
+    
+    <div class="stopwatch-container">
+      <div class="time-display-container">
+        <div class="js-time-display">00:00:00:00</div>
+      </div>
+  
+      <div class="buttons-container">
+        <button class="js-start-stop-button">Start</button>
+        <button class="js-reset-button">Reset</button>
+      </div>
+    </div>
+
+
     <div class="calculator-container">
       <p class="js-calculation"></p>
   
@@ -94,5 +108,6 @@
     </div>
     
     <script src="10i.js"></script>
+    <script src="stopwatch.js"></script>
   </body>
 </html>
