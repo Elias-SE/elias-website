@@ -2,7 +2,6 @@ body {
   font-family: arial;
 }
 
-
 .start-stop-button,
 .reset-button {
   width: 100%;
@@ -47,12 +46,4 @@ body {
   width: 300px;
   margin-top: 20px;
   column-gap: 10px;
-}
-
-.stopwatch-container {
-  margin-top: 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
