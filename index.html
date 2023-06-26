@@ -5,92 +5,94 @@
     <link rel="stylesheet" href="10i.css">
   </head>
   <body onkeydown="handleKeydown(event);">
-    <p class="js-calculation"></p>
-
-    <div class="row-divider">
-      <div class="column-divider">  
-        <button onclick="
-          updateCalculation('1');
-        ">1</button>
+    <div class="calculator-container">
+      <p class="js-calculation"></p>
   
-        <button onclick="
-          updateCalculation('4');
-        ">4</button>
+      <div class="row-divider">
+        <div class="column-divider">  
+          <button onclick="
+            updateCalculation('1');
+          ">1</button>
+    
+          <button onclick="
+            updateCalculation('4');
+          ">4</button>
+    
+          <button onclick="
+            updateCalculation('7');
+          ">7</button>
+    
+          <button onclick="
+            updateCalculation('0');
+          ">0</button>
+    
+          <button class="clear-button" onclick="
+            clearCalculation();
+          ">Clear</button>
+        </div>
+    
+        <div class="column-divider">
+          <button onclick="
+            updateCalculation('2');
+          ">2</button>
+    
+          <button onclick="
+            updateCalculation('5');
+          ">5</button>
+    
+          <button onclick="
+            updateCalculation('8');
+          ">8</button>
+    
+          <button onclick="
+            updateCalculation('.');
+          ">.</button>
   
-        <button onclick="
-          updateCalculation('7');
-        ">7</button>
+          <button class="delete-button" onclick="
+            deletePrevious();
+          ">
+            Del
+          </button>
+        </div>
+    
+        <div class="column-divider">
+          <button onclick="
+            updateCalculation('3');
+          ">3</button>
+    
+          <button onclick="
+            updateCalculation('6');
+          ">6</button>
+    
+          <button onclick="
+            updateCalculation('9');
+          ">9</button>
+    
+          <button onclick="
+            evaluateCalculation();
+          ">=</button>
+        </div>
+    
+        <div class="column-divider">
+          <button class="operator" onclick="
+            updateCalculation(' + ');
+          ">+</button>
+    
+          <button class="operator" onclick="
+            updateCalculation(' - ');
+          ">-</button>
+    
+          <button class="operator" onclick="
+            updateCalculation(' * ');
+          ">*</button>
   
-        <button onclick="
-          updateCalculation('0');
-        ">0</button>
-  
-        <button class="clear-button" onclick="
-          clearCalculation();
-        ">Clear</button>
+          <button class="operator" onclick="
+            updateCalculation(' / ');
+          ">/</button>
+        </div>  
       </div>
-  
-      <div class="column-divider">
-        <button onclick="
-          updateCalculation('2');
-        ">2</button>
-  
-        <button onclick="
-          updateCalculation('5');
-        ">5</button>
-  
-        <button onclick="
-          updateCalculation('8');
-        ">8</button>
-  
-        <button onclick="
-          updateCalculation('.');
-        ">.</button>
-
-        <button class="delete-button" onclick="
-          deletePrevious();
-        ">
-          Del
-        </button>
-      </div>
-  
-      <div class="column-divider">
-        <button onclick="
-          updateCalculation('3');
-        ">3</button>
-  
-        <button onclick="
-          updateCalculation('6');
-        ">6</button>
-  
-        <button onclick="
-          updateCalculation('9');
-        ">9</button>
-  
-        <button onclick="
-          evaluateCalculation();
-        ">=</button>
-      </div>
-  
-      <div class="column-divider">
-        <button class="operator" onclick="
-          updateCalculation(' + ');
-        ">+</button>
-  
-        <button class="operator" onclick="
-          updateCalculation(' - ');
-        ">-</button>
-  
-        <button class="operator" onclick="
-          updateCalculation(' * ');
-        ">*</button>
-
-        <button class="operator" onclick="
-          updateCalculation(' / ');
-        ">/</button>
-      </div>  
     </div>
-
+    
     <script src="10i.js"></script>
   </body>
 </html>
