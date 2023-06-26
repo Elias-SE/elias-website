@@ -4,8 +4,99 @@
     <title>Stopwatch</title>
 
     <link rel="stylesheet" href="stopwatch.css">
+    <link rel="stylesheet" href="styles/better-calculator.css">
   </head>
-  <body>
+  <body onkeydown="handleKeydown(event);">
+    <div class="calculator-container">
+      <div class="calculation-container">
+        <div class="js-calculation calculation"></div>
+      </div>
+  
+      <div class="row-divider">
+        <div class="column-divider">  
+          <button class="digit-button" onclick="
+            addValue('1');
+          ">1</button>
+    
+          <button class="digit-button" onclick="
+            addValue('4');
+          ">4</button>
+    
+          <button class="digit-button" onclick="
+            addValue('7');
+          ">7</button>
+    
+          <button class="digit-button" onclick="
+            addValue('0');
+          ">0</button>
+    
+          <button class="clear-button" onclick="
+            clearCalculation();
+          ">Clear</button>
+        </div>
+    
+        <div class="column-divider">
+          <button class="digit-button" onclick="
+            addValue('2');
+          ">2</button>
+    
+          <button class="digit-button" onclick="
+            addValue('5');
+          ">5</button>
+    
+          <button class="digit-button" onclick="
+            addValue('8');
+          ">8</button>
+    
+          <button class="digit-button" onclick="
+            addValue('.');
+          ">.</button>
+  
+          <button class="delete-button" onclick="
+            deletePrevious();
+          ">
+            Del
+          </button>
+        </div>
+    
+        <div class="column-divider">
+          <button class="digit-button" onclick="
+            addValue('3');
+          ">3</button>
+    
+          <button class="digit-button" onclick="
+            addValue('6');
+          ">6</button>
+    
+          <button class="digit-button" onclick="
+            addValue('9');
+          ">9</button>
+    
+          <button class="digit-button" onclick="
+            evaluateCalculation();
+          ">=</button>
+        </div>
+    
+        <div class="column-divider">
+          <button class="operator" onclick="
+            addValue(' + ');
+          ">+</button>
+    
+          <button class="operator" onclick="
+            addValue(' - ');
+          ">-</button>
+    
+          <button class="operator" onclick="
+            addValue(' * ');
+          ">*</button>
+  
+          <button class="operator" onclick="
+            addValue(' / ');
+          ">/</button>
+        </div>  
+      </div>
+    </div>
+      
     <div class="stopwatch-container">
       <div class="time-display-container">
         <div class="js-time-display">00:00:00:00</div>
@@ -16,6 +107,8 @@
         <button class="js-reset-button reset-button">Reset</button>
       </div>
     </div>
+    
     <script src="stopwatch.js"></script>
+    <script src="scripts/better-calculator.js"></script>
   </body>
 </html>
