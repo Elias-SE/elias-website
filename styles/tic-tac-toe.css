@@ -1,0 +1,76 @@
+body {
+  font-family: arial;
+}
+
+.square {
+  border: 1px rgb(161, 161, 161) solid;
+  height: 200px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(228, 228, 228);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 200px 200px 200px;
+  column-gap: 10px;
+  row-gap: 10px;
+  width: 620px;
+}
+
+.circle {
+  border: 1px white solid;
+  border-radius: 999px;
+  background-color: green;
+  color: white;
+}
+
+.rectangle {
+  border: 1px white solid;
+  background-color: rgb(189, 0, 0);
+  color: white;
+}
+
+.result-container,
+.score-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.result-container {
+  font-size: 25px;
+  background-color: rgb(209, 209, 209);
+  height: 80px;
+  width: 400px;
+}
+
+.score-container {
+  font-size: 20px;
+}
+
+.stats-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 620px;
+  margin-top: 30px;
+  row-gap: 15px;
+}
+
+.start-button {
+  padding: 10px 30px;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.tic-tac-toe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px;
+}
